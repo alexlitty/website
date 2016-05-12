@@ -5,18 +5,19 @@
 
         <title>Alexander Litty</title>
 
-        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="/styles.css">
         <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Lora">
         <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Herr+Von+Muellerhoff" />
 
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
+        <script src="/site.js"></script>
   </head>
 
-  <body>
+  <body ng-controller="SiteController as site">
     <header>
         <div class="centerpiece">
             <h1 class="magictime puffIn">Alexander Litty</h1>
-            <h2>Programmer Extraordinaire</h2>
+            <h2 ng-class="{'magictime swap': site.header.sequence !== 'name'}">Programmer Extraordinaire</h2>
         </div>
     </header>
   </body>
