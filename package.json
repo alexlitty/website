@@ -1,0 +1,21 @@
+{
+  "name": "alexlitty.com",
+  "version": "1.0.0",
+  "description": "Alex Litty's personal website.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://alexlitty:deb343e7ffae4b855ed73014de0dd198352bf81a@github.com/alexlitty/website.git"
+  },
+  "author": "Alexander Litty",
+  "license": "None",
+  "bugs": {
+    "url": "https://github.com/alexlitty/website/issues"
+  },
+  "dependencies": {
+    "express": "^4.13.4"
+  }
+}
