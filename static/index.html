@@ -25,7 +25,7 @@
             </div>
 
             <div class="item contact" ng-click="site.navigate('contact')">Contact</div>
-            <div class="item testimonials" ng-click="site.navigate('contact')">Testimonials</div>
+            <div class="item testimonials" ng-click="site.navigate('faq')">FAQ</div>
         </div>
     </header>
 
@@ -108,7 +108,9 @@
             <div class="content">
 
                 <div class="item">
-                    <img src="/images/projects/cosmodon.png" alt="Cosmodon" />
+                    <a href="http://www.cosmodon.com/" target="_blank">
+                        <img src="/images/projects/cosmodon.png" alt="Cosmodon" />
+                    </a>
 
                     <div><strong>C++ Video Game Library</strong> &bull; <span class="i">In Development</span></div>
 
@@ -118,10 +120,179 @@
 
                     <br /><br />
                     
-                    It was created as a simple and powerful solution for 3D graphics, low-level networking, and physics simulation.
+                    It was created as a simple and powerful solution for 3D graphics, physics simulation, and efficient networking.
+
+                    <br /><br />
+
+                    <a href="https://www.github.com/lanyardtextile/cosmodon" target="_blank">Peruse the code on GitHub.</a>
                     
                 </div>
 
+                <div class="item">
+                    <img src="/images/projects/tree-simulator.png" alt="Tree Simulator" />
+
+                    <div><strong>Video Game</strong> &bull; <span class="i">In Development</span></div>
+
+                    <br />
+
+                    When not working on Cosmodon, I build Tree Simulator.
+
+                    <br /><br />
+
+                    As a tree lost in space, you must use your weaponized leaves to defeat the evil Mega Beaver. The game features procedurally generated galaxies, presenting new and random challenges with each playthrough.
+
+                    <br /><br />
+
+                    This game is being built in C++11 with <a href="http://www.sfml-dev.org/" target="_blank">SFML.</a>
+                </div>
+
+            </div>
+        </article>
+
+        <article>
+            <h1>Academic</h1>
+
+            <div class="content">
+                <div class="item">
+                    <img src="/images/books/clean-code.jpg" alt="Clean Code" />
+
+                    <br />
+
+                    <div><strong>Clean Code</strong> &bull; <span class="i">Robert C. Martin</span></div>
+
+                    <br />
+
+                    This is my favorite programming book for modern development. It explores the balance between timeliness and quality code, with an emphasis on meaningful delivery estimates.
+                </div>
+
+                <div class="item">
+                    <img src="/images/megaminer-ai.png" alt="MegaMiner AI"/>
+                    <div><strong>MegaMiner AI</strong> &bull; <span class="i">Artificial Intelligence Challenge</span></div>
+                    <div class="i">Three-Time Participant</div>
+
+                    <br />
+
+                    The MegaMiner AI is an annual 24-hour coding challenge.
+                    
+                    <br /><br />
+                    
+                    Participants build an artificial intelligence for a pre-built video game, which are ran against each other until one winner remains.
+
+                </div>
+
+                <div class="item">
+                    <div><strong>Formal Agile Training</strong> &bull; January 2016</div>
+
+                    <br />
+
+                    In a multi-day training session, my team explored Agile development. We integrated the methodology into our into existing workflow, emphasizing the need for reliable delivery times.
+
+                </div>
+            </div>
+        </article>
+
+        <article>
+            <h1>Education</h1>
+
+            <div class="content">
+                <div class="item">
+                    <div><strong>Missouri University of Science and Technology</strong> &bull; <span class="i">Fall 2011 &mdash; Fall 2014</span></div>
+                    <div class="i">Completed 80 credit hours toward B.S. Computer Engineering</div>
+                </div>
+
+                <div class="item">
+                    I intend to continue my education while working in San Francisco.
+                </div>
+            </div>
+        </article>
+    </section>
+
+    <section ng-show="site.section === 'about'">
+        <article>
+            <h1>About</h1>
+
+            <div class="content">
+                You can call me Alex!
+                
+                <br /><br />
+                
+                I was raised in <a href="https://en.wikipedia.org/wiki/Guam" target="_blank">Guam</a>, had some education in Missouri, and moved out to California to work. I intend to stay in the San Francisco area for a long time.
+            </div>
+        </article>
+
+        <article>
+            <h1>Programming</h1>
+
+            <div class="content">
+                I started programming when I was young.
+
+                <br /><br />
+
+                My initial interests were in websites and quickly grew into video games. In all my programming, I've experimented with a lot of technologies: I'm an adaptable developer, extremely confident in my abilities, and eager to learn every day.
+
+                <br /><br />
+
+                Today I seek great challenges, on a team or otherwise.
+            </div>
+        </article>
+    </section>
+
+    <section ng-show="site.section === 'faq'">
+        <article>
+            <h1>FAQ</h1>
+
+            <div class="content">
+                <div class="item">
+                    <div><strong>What kind of work do you seek?</strong></div>
+
+                    <br />
+
+                    I seek a full-time Software Engineering position in the San Francisco area. I excel in backend development, enjoy fullstack development, and dislike pure frontend development.
+                    
+                    <br /><br />
+                    
+                    Ideally, my next opportunity will allow me to explore a senior or leadership role.
+                </div>
+
+                <div class="item">
+                    <div><strong>Do you enjoy mentoring?</strong></div>
+
+                    <br />
+
+                    It's my favorite activity. Programming is enjoyable, passing knowledge even more so.
+                </div>
+
+                <div class="item">
+                    <div><strong>Do you perform well on a team?</strong></div>
+
+                    <br />
+
+                    Absolutely. I'm a people person, and am eager to communicate and collaborate with my peers.
+                </div>
+
+                <div class="item">
+                    <div><strong>How do you perform under stress?</strong></div>
+
+                    <br />
+
+                    Historically well. When a deadline creeps close or a critical system goes offline, it's time to work and be proactive -- panicking is never the answer.
+                </div>
+            </div>
+        </article>
+    </section>
+
+    <section ng-show="site.section === 'contact'">
+        <article>
+            <h1>Contact</h1>
+
+            <div class="content">
+                <div class="item">
+                    You can e-mail me at <strong>me@alexlitty.com</strong>.
+
+                    <br /><br />
+
+                    I reside in <strong>Emervyille, CA</strong>. If you'd like my full address, contact me by e-mail.
+                </div>
             </div>
         </article>
     </section>

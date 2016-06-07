@@ -1617,7 +1617,8 @@ h1, h2 {
   font-style: italic; }
 
 body {
-  background-color: #FFFDF2; }
+  background-color: #FFFDF2;
+  min-width: 1300px; }
 
 body > header {
   display: flex;
@@ -1663,7 +1664,6 @@ body > header {
           font-size: 24px;
           font-weight: 500; }
         body > header .items .item.centerpiece h1, body > header .items .item.centerpiece h2 {
-          width: 50%;
           margin: 0 auto;
           text-align: center; }
       body > header .items .item.contact {
@@ -1683,33 +1683,37 @@ section {
 h1 {
   margin: 0 0 32px 0;
   padding: 0;
-  font-size: 42px; }
+  font-size: 28px; }
 
 article {
   margin: 28px 0; }
 
-section#resume article {
+section article {
   width: 100%;
   display: inline-block; }
-section#resume h1 {
+section h1 {
   display: inline-block;
   float: left;
   width: 21%;
   padding-top: 22px; }
-section#resume .content {
+section .content {
   width: 54%;
   float: left;
   padding: 32px;
   border-left: 1px solid #000; }
-section#resume ul {
+section ul {
   margin: 0;
   padding: 0 18px;
   font-weight: bold; }
-section#resume .item {
-  margin-bottom: 32px; }
-  section#resume .item:last-of-type {
-    margin-bottom: 0; }
-  section#resume .item img {
+section .item {
+  margin-bottom: 32px;
+  padding-bottom: 32px;
+  border-bottom: 1px dotted #999; }
+  section .item:last-of-type {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom-width: 0; }
+  section .item img {
     max-width: 300px;
     max-height: 100px;
     margin-bottom: 18px; }

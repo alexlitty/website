@@ -1,4 +1,4 @@
-section#resume {
+section {
 
     article {
         width: 100%;
@@ -32,9 +32,14 @@ section#resume {
 
     .item {
         margin-bottom: 32px;
+        padding-bottom: 32px;
+
+        border-bottom: 1px dotted #999;
 
         &:last-of-type {
             margin-bottom: 0;
+            padding-bottom: 0;
+            border-bottom-width: 0;
         }
 
         img {
