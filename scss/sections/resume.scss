@@ -1,0 +1,47 @@
+section#resume {
+
+    article {
+        width: 100%;
+        display: inline-block;
+    }
+
+    h1 {
+        display: inline-block;
+        float: left;
+
+        width: 21%;
+
+        padding-top: 22px;
+    }
+
+    .content {
+        width: 54%;
+        float: left;
+
+        padding: 32px;
+
+        border-left: 1px solid #000;
+    }
+
+    ul {
+        margin: 0;
+        padding: 0 18px;
+
+        font-weight: bold;
+    }
+
+    .item {
+        margin-bottom: 32px;
+
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+
+        img {
+            max-width: 300px;
+            max-height: 100px;
+            margin-bottom: 18px;
+        }
+    }
+
+}

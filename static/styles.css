@@ -1595,30 +1595,121 @@
     opacity: 1;
     transform-origin: 0% 50%;
     transform: scale(1) translate(0%, 0%); } }
-body {
-  font-family: Georgia, 'Times New Roman', Serif;
-  min-height: 100%; }
+html, body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  margin: 0;
+  padding: 0; }
+
+body > * {
+  flex-shrink: 0;
+  font-family: Georgia, 'Times New Roman', Serif; }
+
+body > section {
+  flex-grow: 1; }
 
 h1, h2 {
   margin: 0;
   padding: 0; }
 
+.i {
+  font-style: italic; }
+
+body {
+  background-color: #FFFDF2; }
+
 body > header {
-  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center; }
-  body > header .centerpiece h1 {
-    line-height: 49px;
-    font-size: 49px;
-    font-family: 'Herr Von Muellerhoff', Sans-Serif;
-    font-weight: bold; }
-  body > header .centerpiece h2 {
-    line-height: 24px;
-    font-size: 24px;
-    font-family: Lora, Sans-Serif;
-    font-variant: small-caps;
-    font-weight: 500; }
-  body > header .centerpiece h1, body > header .centerpiece h2 {
-    margin: 0 auto;
-    text-align: center; }
+  body > header.home {
+    height: 100%; }
+  body > header .items {
+    width: 100%;
+    background-color: #F8F4D7; }
+    body > header .items .item {
+      width: 15%;
+      float: left;
+      padding: 32px 0;
+      text-align: center;
+      line-height: 73px;
+      font-size: 24px;
+      font-family: Lora, Sans-Serif;
+      font-variant: small-caps;
+      font-weight: 500;
+      cursor: pointer; }
+      body > header .items .item:hover {
+        color: #999; }
+      body > header .items .item.resume {
+        background-color: #E98977;
+        border-bottom: 8px solid #D17B6A; }
+      body > header .items .item.about {
+        background-color: #F2B4A8;
+        border-bottom: 8px solid #D9A196; }
+      body > header .items .item.centerpiece {
+        float: left;
+        width: 40%;
+        padding: 32px 0;
+        border-bottom: 8px solid #DEDBC1; }
+        body > header .items .item.centerpiece h1 {
+          line-height: 49px;
+          font-size: 49px;
+          font-family: 'Herr Von Muellerhoff', Sans-Serif;
+          font-weight: bold;
+          font-variant: normal; }
+        body > header .items .item.centerpiece h2 {
+          line-height: 24px;
+          font-size: 24px;
+          font-weight: 500; }
+        body > header .items .item.centerpiece h1, body > header .items .item.centerpiece h2 {
+          width: 50%;
+          margin: 0 auto;
+          text-align: center; }
+      body > header .items .item.contact {
+        float: right;
+        background-color: #F4B36C;
+        border-bottom: 8px solid #DBA061; }
+      body > header .items .item.testimonials {
+        float: right;
+        background-color: #F4DEC2;
+        border-bottom: 8px solid #DBC7AE; }
+
+section {
+  width: 69%;
+  margin: 28px auto;
+  font-size: 18px; }
+
+h1 {
+  margin: 0 0 32px 0;
+  padding: 0;
+  font-size: 42px; }
+
+article {
+  margin: 28px 0; }
+
+section#resume article {
+  width: 100%;
+  display: inline-block; }
+section#resume h1 {
+  display: inline-block;
+  float: left;
+  width: 21%;
+  padding-top: 22px; }
+section#resume .content {
+  width: 54%;
+  float: left;
+  padding: 32px;
+  border-left: 1px solid #000; }
+section#resume ul {
+  margin: 0;
+  padding: 0 18px;
+  font-weight: bold; }
+section#resume .item {
+  margin-bottom: 32px; }
+  section#resume .item:last-of-type {
+    margin-bottom: 0; }
+  section#resume .item img {
+    max-width: 300px;
+    max-height: 100px;
+    margin-bottom: 18px; }

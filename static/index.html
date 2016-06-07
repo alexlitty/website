@@ -1,4 +1,4 @@
-<html>
+<html ng-app="alexlitty">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -15,10 +15,115 @@
 
   <body ng-controller="SiteController as site">
     <header>
-        <div class="centerpiece">
-            <h1 class="magictime puffIn">Alexander Litty</h1>
-            <h2 ng-class="{'magictime swap': site.header.sequence !== 'name'}">Programmer Extraordinaire</h2>
+        <div class="items">
+            <div class="item resume" ng-click="site.navigate()">Resume</div>
+            <div class="item about" ng-click="site.navigate('about')">About</div>
+
+            <div class="item centerpiece">
+                <h1>Alexander Litty</h1>
+                <h2>Programmer Extraordinaire</h2>
+            </div>
+
+            <div class="item contact" ng-click="site.navigate('contact')">Contact</div>
+            <div class="item testimonials" ng-click="site.navigate('contact')">Testimonials</div>
         </div>
     </header>
+
+    <section id="resume" ng-show="!site.section">
+        <article>
+            <h1>Hi!</h1>
+
+            <div class="content">
+
+                I'm <strong>Alexander Litty</strong>, a Software Engineer with 3 years of professional experience and a lifetime of hobbiest experience.
+                
+                I bring strong architectural and problem-solving abilities to the table with a can-do attitude.
+                
+                <br /><br />
+
+                I seek an exciting new opportunity in the <strong>San Francisco</strong> area.
+
+            </div>
+        </article>
+
+        <article>
+            <h1>Employment</h1>
+
+            <div class="content">
+
+                <div class="item">
+                    <a href="http://www.pricespider.com/" target="_blank">
+                        <img src="/images/companies/pricespider.png" alt="PriceSpider" />
+                    </a>
+
+                    <div class="info">
+                        <div><strong>Software Engineer</strong> &bull; <span class="i">March 2015 &mdash; May 2016</span></div>
+                        <div><span class="i">Irvine, California</span></div>
+
+                        <br />
+
+                        <ul>
+                            <li>Developed large-volume web crawlers using Node.js and C#</li>
+                            <li>Delivered client tools with Express and AngularJS</li>
+                            <li>Architected core services in high-accountability environment</li>
+                        </ul>
+
+                        <br />
+
+                        PriceSpider is the leader in the Where-To-Buy industry, helping users find the best prices for products.
+
+                        <br /><br />
+                        
+                        Since we worked with popular household names -- Samsung, LG, Canon, Mattel, and plenty more -- PriceSpider was a fast-paced environment with minimal room for error.
+                        
+                        The 50-person company had 8 Software Engineers.
+                    </div>
+                </div>
+
+                <div class="item">
+                    <a href="http://www.lumate.com/" target="_blank">
+                        <img src="/images/companies/lumate.png" alt="Lumate" />
+                    </a>
+
+                    <div class="info">
+                        <div><strong>Software Developer</strong> &bull; <span class="i">July 2013 &mdash; September 2014</span></div>
+                        <div><span class="i">Rolla, Missouri</span></div>
+
+                        <br />
+
+                        <ul>
+                            <li>Crafted Python software at fast-paced startup</li>
+                            <li>Analyzed Big Data on-the-fly to intelligently serve advertisements</li>
+                            <li>Contributed to a low-level pipeline network using ZeroMQ</li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <article>
+            <h1>Projects</h1>
+
+            <div class="content">
+
+                <div class="item">
+                    <img src="/images/projects/cosmodon.png" alt="Cosmodon" />
+
+                    <div><strong>C++ Video Game Library</strong> &bull; <span class="i">In Development</span></div>
+
+                    <br />
+
+                    Cosmodon is an open-source video game library I create in my spare time.
+
+                    <br /><br />
+                    
+                    It was created as a simple and powerful solution for 3D graphics, low-level networking, and physics simulation.
+                    
+                </div>
+
+            </div>
+        </article>
+    </section>
   </body>
 </html>

@@ -1,9 +1,26 @@
-body {
-    font-family: Georgia, 'Times New Roman', Serif;
+html, body {
+    display: flex;
+    flex-direction: column;
+
     min-height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body > * {
+    flex-shrink: 0;
+    font-family: Georgia, 'Times New Roman', Serif;
+}
+
+body > section {
+    flex-grow: 1;
 }
 
 h1, h2 {
     margin: 0;
     padding: 0;
+}
+
+.i {
+    font-style: italic;
 }

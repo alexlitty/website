@@ -1,12 +1,9 @@
-app.controller('SiteController', ['$scope', function($scope) {
+app.controller('SiteController', ['$timeout', SiteController]);
 
-    // Header options.
-    $scope.header = {
-        sequence: 'name'
-    };
+function SiteController($timeout) {
 
-    // Header animations.
-    setTimeout(function() {
-        $scope.header.sequence = 'centerpiece';
-    }, 1000);
-}]);
+};
+
+SiteController.prototype.navigate = function(section) {
+    this.section = section;
+};

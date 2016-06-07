@@ -1,39 +1,110 @@
+body {
+    background-color: #FFFDF2;
+}
+
 // Main site header.
 body > header {
-    height: 100%;
-
     display: flex;
     align-items: center;
     justify-content: center;
 
-    // Name and slogan.
-    .centerpiece {
+    &.home {
+        height: 100%;
+    }
 
-        // Name text.
-        h1 {
-            line-height: 49px;
-            font-size: 49px;
+    .items {
+        width: 100%;
+        background-color: #F8F4D7;
 
-            font-family: 'Herr Von Muellerhoff', Sans-Serif;
-            font-weight: bold;
-        }
+        // Menu items.
+        .item {
+            width: 15%;
+            float: left;
 
-        // Slogan text.
-        h2 {
-            line-height: 24px;
+            padding: 32px 0;
+            text-align: center;
+
+            line-height: 49px + 24px;
             font-size: 24px;
 
             font-family: Lora, Sans-Serif;
             font-variant: small-caps;
             font-weight: 500;
+
+            cursor: pointer;
+            &:hover {
+                color: #999;
+            }
+
+            &.resume {
+                background-color: #E98977;
+                border-bottom: 8px solid #D17B6A;
+            }
+
+            &.about {
+                background-color: #F2B4A8;
+                border-bottom: 8px solid #D9A196;
+            }
+
+            &.centerpiece {
+                float: left;
+                width: 40%;
+                padding: 32px 0;
+
+                border-bottom: 8px solid #DEDBC1;
+
+                // Name text.
+                h1 {
+                    line-height: 49px;
+                    font-size: 49px;
+
+                    font-family: 'Herr Von Muellerhoff', Sans-Serif;
+                    font-weight: bold;
+                    font-variant: normal;
+                }
+
+                // Slogan text.
+                h2 {
+                    line-height: 24px;
+                    font-size: 24px;
+                    font-weight: 500;
+                }
+
+                h1, h2 {
+                    width: 50%;
+                    margin: 0 auto;
+
+                    text-align: center;
+                }
+            }
+
+            &.contact {
+                float: right;
+                background-color: #F4B36C;
+                border-bottom: 8px solid #DBA061;
+            }
+
+            &.testimonials {
+                float: right;
+                background-color: #F4DEC2;
+                border-bottom: 8px solid #DBC7AE;
+            }
         }
-
-        h1, h2 {
-            margin: 0 auto;
-
-            text-align: center;
-        }
-
     }
+}
 
+section {
+    width: 69%;
+    margin: 28px auto;
+    font-size: 18px;
+}
+
+h1 {
+    margin: 0 0 32px 0;
+    padding: 0;
+    font-size: 42px;
+}
+
+article {
+    margin: 28px 0;
 }
